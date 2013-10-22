@@ -1,4 +1,4 @@
-# Copyright (C) 2009 The Android Open Source Project
+# Copyright (C) 2013 OmniROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,21 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+# Inherit Omni GSM telephony parts
+$(call inherit-product, vendor/cm/config/gsm.mk)
 
-# Call our device config
-$(call inherit-product, device/samsung/vibrantmtd/device.mk)
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/cm/config/common.mk)
 
-# Call the full product config
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
+# Inherit device configuration
+$(call inherit-product, device/samsung/vibrantmed/full_vibrantmtd.mk)
 
-# Vibrant uses high-density artwork where available
-PRODUCT_LOCALES += hdpi
-
-# Discard inherited values and use our own instead.
+# Device identifier
+PRODUCT_RELEASE_NAME := Vibrant
+PRODUCT_DEVICE := vibrantmed
 PRODUCT_NAME := full_vibrantmtd
-PRODUCT_DEVICE := vibrantmtd
 PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SGH-T959
