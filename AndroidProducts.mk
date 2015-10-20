@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2008 The Android Open-Source Project
+# Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,4 +16,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_vibrantmtd.mk
+    $(LOCAL_DIR)/cm_vibrantmtd.mk
