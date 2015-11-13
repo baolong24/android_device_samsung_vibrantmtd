@@ -9,3 +9,8 @@ ro.sf.lcd_density=240
 # CWM key repeat
 ro.cwm.enable_key_repeat=true
 ro.cwm.repeatable_keys=115,114,139,217
+
+# ADB
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
