@@ -32,7 +32,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     gps.aries
 
-# Inherit common configuration
+# Build messaging app
+PRODUCT_PACKAGES += \
+	messaging
+
+# Inherit Aries common device configuration.
 $(call inherit-product, device/samsung/aries-common/device_base.mk)
 
 # Proprietary
