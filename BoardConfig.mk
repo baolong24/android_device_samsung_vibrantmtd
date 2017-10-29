@@ -17,13 +17,13 @@
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
 
-#Video Devices
+# Video Devices
 BOARD_SECOND_CAMERA_DEVICE := /dev/video2
 
 # FM Radio
-BOARD_HAVE_FM_RADIO := true
-BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
-BOARD_FM_DEVICE := si4709
+# BOARD_HAVE_FM_RADIO := true
+# BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
+# BOARD_FM_DEVICE := si4709
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/vibrantmtd/bluetooth
@@ -33,9 +33,9 @@ TARGET_KERNEL_SOURCE := kernel/samsung/aries
 TARGET_KERNEL_CONFIG := cyanogenmod_i9000_defconfig
 
 # Recovery
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/galaxysmtd/recovery/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/vibrantmtd/recovery/recovery_keys.c
 
 TARGET_OTA_ASSERT_DEVICE := vibrant,vibrantmtd,SGH-T959
 
-# Use the non-open-source parts, if they're present
+# Import the aries-common BoardConfigCommon.mk
 include device/samsung/aries-common/BoardConfigCommon.mk

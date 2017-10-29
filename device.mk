@@ -15,8 +15,11 @@
 DEVICE_PACKAGE_OVERLAYS := device/samsung/vibrantmtd/overlay
 
 # These are the hardware-specific configuration files
-PRODUCT_COPY_FILES := \
-	device/samsung/vibrantmtd/etc/asound.conf:system/etc/asound.conf
+DEVICE_PACKAGE_OVERLAYS += \
+	device/samsung/vibrantmtd/overlay
+
+PRODUCT_COPY_FILES += \
+	device/samsung/vibrantmtd/asound.conf:system/etc/asound.conf
 
 # Init files
 PRODUCT_COPY_FILES += \
@@ -31,6 +34,12 @@ PRODUCT_COPY_FILES += \
 # GPS
 PRODUCT_PACKAGES += \
     gps.aries
+
+# This device is hdpi
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+# A list of dpis to select prebuilt apk, in precedence order.
+PRODUCT_AAPT_PREBUILT_DPI := hdpi mdpi xhdpi xxhdpi
 
 # Build messaging app
 PRODUCT_PACKAGES += \
