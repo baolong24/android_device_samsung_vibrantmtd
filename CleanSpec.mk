@@ -49,7 +49,8 @@
 # ************************************************
 # NEWER CLEAN STEPS MUST BE AT THE END OF THE LIST
 # ************************************************
-$(call add-clean-step, rm -rf $(TARGET_OUT)/build.prop)
+$(call add-clean-step, rm -rf $(OUT_DIR)/target/product/vibrantmtd/system/build.prop)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/obj/ETC/system_build_prop_intermediates/build.prop)
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/product/vibrantmtd/obj/SHARED_LIBRARIES/libaudio_intermediates)
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/product/vibrantmtd/obj/SHARED_LIBRARIES/libaudio_intermediates)
 $(call add-clean-step, rm -rf $(OUT_DIR)/target/product/vibrantmtd/obj/STATIC_LIBRARIES/libasound_intermediates)
