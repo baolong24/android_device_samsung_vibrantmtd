@@ -30,7 +30,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/vibrantmtd/bluetoo
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/samsung/aries
-TARGET_KERNEL_CONFIG := cyanogenmod_i9000_defconfig
+TARGET_KERNEL_CONFIG := omni_galaxysmtd_defconfig
+BOARD_KERNEL_IMAGE_NAME := zImage
 
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/vibrantmtd/recovery/recovery_keys.c
