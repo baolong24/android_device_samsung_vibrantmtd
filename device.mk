@@ -15,8 +15,8 @@
 DEVICE_PACKAGE_OVERLAYS := device/samsung/vibrantmtd/overlay
 
 # These are the hardware-specific configuration files
-DEVICE_PACKAGE_OVERLAYS += \
-	device/samsung/vibrantmtd/overlay
+# DEVICE_PACKAGE_OVERLAYS += \
+# 	device/samsung/galaxysmtd/overlay
 
 PRODUCT_COPY_FILES += \
 	device/samsung/vibrantmtd/asound.conf:system/etc/asound.conf
