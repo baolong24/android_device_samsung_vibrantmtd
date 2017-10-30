@@ -1,4 +1,3 @@
-#
 # Copyright (C) 2013 OmniROM Project
 # Copyright (C) 2013-2016, The CyanogenMod Project
 # Copyright (C) 2017, The LineageOS Project
@@ -14,6 +13,19 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-add_lunch_combo lineage_vibrantmtd-userdebug
+# low ram device
+TARGET_LOW_RAM_DEVICE := true
+
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/samsung/vibrantmtd/device.mk)
+
+# Device identifier
+PRODUCT_RELEASE_NAME := Vibrant
+PRODUCT_DEVICE := vibrantmtd
+PRODUCT_NAME := lineage_vibrantmtd
+PRODUCT_BRAND := samsung
+PRODUCT_MODEL := SGH-T959

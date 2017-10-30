@@ -16,4 +16,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cm_vibrantmtd.mk
+    $(LOCAL_DIR)/lineage_vibrantmtd.mk
