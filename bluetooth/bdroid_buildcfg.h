@@ -19,7 +19,9 @@
 
 #define BTM_DEF_LOCAL_NAME   "Samsung Vibrant"
 
-#define BLE_INCLUDED TRUE
-#define BTA_GATT_INCLUDED TRUE
-#define SMP_INCLUDED TRUE
+#define PAN_NAP_DISABLED TRUE
+#define BLE_INCLUDED FALSE
+#define BTA_GATT_INCLUDED FALSE
+#define SMP_INCLUDED FALSE
+
 #endif
